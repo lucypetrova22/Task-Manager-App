@@ -24,7 +24,7 @@ public class Man {
         for (int i = 0; i < tasks.size(); i++) {
             Task task = tasks.get(i);
             if (task.getTaskId() == taskId) {
-                task.setCompleted(true);
+                task.markAsComlpeted;  //calling the mthd from the Task Class
                 return;
             }
         }
