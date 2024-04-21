@@ -102,12 +102,11 @@ public class Main {
         taskManager.viewAllTasks();
     }
 
-    private static void ReportTasksDueToday(Man taskManager) {
-        System.out.println("Generating report:");
-        LocalDate today = LocalDate.now();
+     private static void ReportTasksDueToday(Man taskManager) {
+        System.out.println("Generating report for tasks due today (2024-04-21):");
+        LocalDate today = LocalDate.of(2024, 04, 21);                                     // here i am setting a specific date (today's date)    
         List<Task> tasksDueToday = taskManager.ReportTasksDueToday(today);
-        for (int i = 0; i < tasksDueToday.size(); i++) {
-            Task task = tasksDueToday.get(i);
+        for (Task task : tasksDueToday) {
             System.out.println("Task " + task.getTaskId() + ": " + task.getDescription() +
                     ", Due " + task.getDueDate());
         }
