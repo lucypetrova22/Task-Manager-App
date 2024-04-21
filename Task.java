@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 
 public class Task {
-    private int taskId;
+    private int taskId;                //private attribuutes, making sure they can be accessed oinly within the class
     private String description;
     private LocalDate dueDate;
     private boolean completed;
