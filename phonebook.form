@@ -1,1 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PhonebookUI">
+  <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <!-- Name Label & Text Field -->
+      <component id="labelName" class="javax.swing.JLabel" binding="labelName">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" anchor="0"/>
+        </constraints>
+        <properties>
+          <text value="Name:"/>
+        </properties>
+      </component>
+      <component id="txtName" class="javax.swing.JTextField" binding="txtName">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" anchor="0" fill="1"/>
+        </constraints>
+        <properties/>
+      </component>
+
+      <!-- Phone Number Label & Text Field -->
+      <component id="labelPhone" class="javax.swing.JLabel" binding="labelPhone">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" anchor="0"/>
+        </constraints>
+        <properties>
+          <text value="Phone Number:"/>
+        </properties>
+      </component>
+      <component id="txtPhone" class="javax.swing.JTextField" binding="txtPhone">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" anchor="0" fill="1"/>
+        </constraints>
+        <properties/>
+      </component>
+
+      <!-- Email Label & Text Field -->
+      <component id="labelEmail" class="javax.swing.JLabel" binding="labelEmail">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" anchor="0"/>
+        </constraints>
+        <properties>
+          <text value="Email:"/>
+        </properties>
+      </component>
+      <component id="txtEmail" class="javax.swing.JTextField" binding="txtEmail">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" anchor="0" fill="1"/>
+        </constraints>
+        <properties/>
+      </component>
+
+      <!-- Address Label & Text Area -->
+      <component id="labelAddress" class="javax.swing.JLabel" binding="labelAddress">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" anchor="0"/>
+        </constraints>
+        <properties>
+          <text value="Address:"/>
+        </properties>
+      </component>
+      <component id="txtAddress" class="javax.swing.JTextArea" binding="txtAddress">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" anchor="0" fill="1"/>
+        </constraints>
+        <properties>
+          <rows value="3"/>
+        </properties>
+      </component>
+
+      <!-- Buttons (Add, Update, Delete, Refresh) -->
+      <component id="btnAdd" class="javax.swing.JButton" binding="btnAdd">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" anchor="0"/>
+        </constraints>
+        <properties>
+          <text value="Add Contact"/>
+        </properties>
+      </component>
+      <component id="btnUpdate" class="javax.swing.JButton" binding="btnUpdate">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" anchor="0"/>
+        </constraints>
+        <properties>
+          <text value="Update Contact"/>
+        </properties>
+      </component>
+      <component id="btnDelete" class="javax.swing.JButton" binding="btnDelete">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" anchor="0"/>
+        </constraints>
+        <properties>
+          <text value="Delete Contact"/>
+        </properties>
+      </component>
+      <component id="btnRefresh" class="javax.swing.JButton" binding="btnRefresh">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" anchor="0"/>
+        </constraints>
+        <properties>
+          <text value="Refresh List"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
 
