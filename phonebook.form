@@ -1,112 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="PhonebookUI">
-  <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="6" column-count="2"
-        same-size-horizontally="false" same-size-vertically="false" hgap="10" vgap="10">
-    <margin top="10" left="10" bottom="10" right="10"/>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" maximized="false">
+  <grid id="27dc6" binding="contentPane" layout-manager="GridBagLayout" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false">
+    <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <grid row="0" column="0" row-span="1" col-span="1" anchor="0" fill="3" hSizePolicy="7" vSizePolicy="7" indent="0" use-parent-layout="false"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <!-- Name Field -->
-      <component id="labelName" class="javax.swing.JLabel" binding="labelName">
+      <component id="5e0c5" class="javax.swing.JScrollPane" binding="scrollPane">
         <constraints>
-          <grid row="0" column="0" anchor="0"/>
-        </constraints>
-        <properties>
-          <text value="Name:"/>
-        </properties>
-      </component>
-      <component id="txtName" class="javax.swing.JTextField" binding="txtName">
-        <constraints>
-          <grid row="0" column="1" fill="1"/>
+          <grid row="0" column="0" row-span="1" col-span="1" anchor="0" fill="3" hSizePolicy="7" vSizePolicy="7" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
+        <border type="none"/>
+        <children>
+          <component id="3bdc4" class="javax.swing.JTable" binding="contactTable">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" anchor="0" fill="3" hSizePolicy="7" vSizePolicy="7" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+          </component>
+        </children>
       </component>
-
-      <!-- Phone Number Field -->
-      <component id="labelPhone" class="javax.swing.JLabel" binding="labelPhone">
+      <component id="8a3b2" class="javax.swing.JPanel" binding="buttonPanel">
         <constraints>
-          <grid row="1" column="0" anchor="0"/>
-        </constraints>
-        <properties>
-          <text value="Phone Number:"/>
-        </properties>
-      </component>
-      <component id="txtPhone" class="javax.swing.JTextField" binding="txtPhone">
-        <constraints>
-          <grid row="1" column="1" fill="1"/>
-        </constraints>
-        <properties/>
-      </component>
-
-      <!-- Email Field -->
-      <component id="labelEmail" class="javax.swing.JLabel" binding="labelEmail">
-        <constraints>
-          <grid row="2" column="0" anchor="0"/>
-        </constraints>
-        <properties>
-          <text value="Email:"/>
-        </properties>
-      </component>
-      <component id="txtEmail" class="javax.swing.JTextField" binding="txtEmail">
-        <constraints>
-          <grid row="2" column="1" fill="1"/>
+          <grid row="1" column="0" row-span="1" col-span="1" anchor="0" fill="3" hSizePolicy="7" vSizePolicy="7" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties/>
-      </component>
-
-      <!-- Address Field -->
-      <component id="labelAddress" class="javax.swing.JLabel" binding="labelAddress">
-        <constraints>
-          <grid row="3" column="0" anchor="0"/>
-        </constraints>
-        <properties>
-          <text value="Address:"/>
-        </properties>
-      </component>
-      <component id="txtAddress" class="javax.swing.JTextArea" binding="txtAddress">
-        <constraints>
-          <grid row="3" column="1" fill="1"/>
-        </constraints>
-        <properties>
-          <rows value="3"/>
-        </properties>
-      </component>
-
-      <!-- Buttons Section -->
-      <component id="btnAdd" class="javax.swing.JButton" binding="btnAdd">
-        <constraints>
-          <grid row="4" column="0" anchor="0"/>
-        </constraints>
-        <properties>
-          <text value="Add Contact"/>
-        </properties>
-      </component>
-      <component id="btnUpdate" class="javax.swing.JButton" binding="btnUpdate">
-        <constraints>
-          <grid row="4" column="1" anchor="0"/>
-        </constraints>
-        <properties>
-          <text value="Update Contact"/>
-        </properties>
-      </component>
-      <component id="btnDelete" class="javax.swing.JButton" binding="btnDelete">
-        <constraints>
-          <grid row="5" column="0" anchor="0"/>
-        </constraints>
-        <properties>
-          <text value="Delete Contact"/>
-        </properties>
-      </component>
-      <component id="btnRefresh" class="javax.swing.JButton" binding="btnRefresh">
-        <constraints>
-          <grid row="5" column="1" anchor="0"/>
-        </constraints>
-        <properties>
-          <text value="Refresh List"/>
-        </properties>
+        <border type="none"/>
+        <children>
+          <component id="b92f6" class="javax.swing.JButton" binding="addButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" anchor="0" fill="0" hSizePolicy="3" vSizePolicy="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add Contact"/>
+            </properties>
+          </component>
+          <component id="a6fd8" class="javax.swing.JButton" binding="updateButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" anchor="0" fill="0" hSizePolicy="3" vSizePolicy="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Update Contact"/>
+            </properties>
+          </component>
+          <component id="c31a9" class="javax.swing.JButton" binding="deleteButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" anchor="0" fill="0" hSizePolicy="3" vSizePolicy="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Delete Contact"/>
+            </properties>
+          </component>
+        </children>
       </component>
     </children>
   </grid>
